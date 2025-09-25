@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                sshagent(['micple-server']) {
+                    sh '''
+                        ssh -o StrictHostKeyChecking=no root@micple.com "
+                            mkdir -p /var/micple.com/jenkisTestFolder
+                        "
+                    '''
+                }
+            }
+        }
+    }
+}
