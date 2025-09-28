@@ -46,6 +46,8 @@ Inside the job:
 In your repository, create a file named `Jenkinsfile` with pipeline steps.
 Example:
 
+[View pipeline file](Jenkinsfile)
+
 ```bash
 pipeline {
     agent any
