@@ -26,6 +26,21 @@ Inside the job:
     - **Branches to build**: `*/master`
   - **Script Path**: `Jenkinsfile` *(enter your pipeline filename here)*
 
+#### (Optional) if repository is private GitHub repository
+- #### Generate a GitHub Personal Access Token (PAT):
+    - Go to **GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)**
+    - Generate a new token with the following scopes:
+    - `repo` (for private repository access)
+    - `admin:repo_hook` (to let Jenkins set webhooks — optional if you configure webhooks manually)
+    - Copy the token safely and store it in Jenkins credentials.
+- #### Add Credentials in Jenkins
+
+    - Go to **Jenkins → Manage Jenkins → Credentials → System → Global credentials → Add Credentials**
+    - Select **Username with password**:
+    - **Username**: your GitHub username  
+    - **Password**: the PAT (personal access token) you generated
+    - Give it an **ID** (e.g., `github-creds`)
+
 
 ### 4. Create a `Jenkinsfile` in GitHub Repo
 In your repository, create a file named `Jenkinsfile` with pipeline steps.
