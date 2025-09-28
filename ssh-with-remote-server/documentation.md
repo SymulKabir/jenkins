@@ -38,7 +38,7 @@ Scroll down to **Pipeline** section
 Then **Definition** -> **Pipeline script**
 
 Write a Simple Pipeline Script in **Script** section:-
-[View pipeline file](https://github.com/SymulKabir/jenkins/blob/main/ssh-with-remote-server/pipeline)
+[View pipeline file](pipeline)
 ```bash
 pipeline {
     agent any
