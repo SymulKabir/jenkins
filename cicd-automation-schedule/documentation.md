@@ -19,7 +19,7 @@
 
 #### 4. Create a Jenkinsfile in GitHub Repository
 - In your repository, create a file named **Jenkinsfile** with your pipeline steps.  
-- Example: [View Jenkinsfile](Jenkinsfile)  
+- Example: [View Jenkinsfile](jenkinsfile)  
 
 ```bash
 pipeline {
