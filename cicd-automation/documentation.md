@@ -18,7 +18,7 @@
 
 Inside the job:
 
-- Go to **Build Triggers** → Select **GitHub hook trigger for GITScm polling**
+- Go to **Build Triggers / Triggers** → Select **GitHub hook trigger for GITScm polling**
 - In **Pipeline** section → Choose **Pipeline script from SCM**
 - Configure the following:
   - **SCM**: Git  
